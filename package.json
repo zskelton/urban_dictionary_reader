@@ -1,0 +1,10 @@
+{
+  "name": "urban_dictionary_reader",
+  "version": "1.0.0",
+  "description": "Pulls a definition from urban dictionary.",
+  "main": "index.js",
+  "repository": "https://github.com/zskelton/urban_dictionary_reader",
+  "author": "Zachary D. Skelton (zskelton@skeltonnetworks.com)",
+  "license": "MIT",
+  "private": null
+}
