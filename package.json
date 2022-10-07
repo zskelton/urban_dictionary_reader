@@ -1,10 +1,31 @@
 {
   "name": "urban_dictionary_reader",
   "version": "1.0.0",
-  "description": "Pulls a definition from urban dictionary.",
-  "main": "index.js",
-  "repository": "https://github.com/zskelton/urban_dictionary_reader",
+  "description": "Pulls a defiinition from Urban Dictionary on each login.",
+  "main": "app/index.cjs",
+  "scripts": {
+    "start": "node app/index.cjs",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zskelton/urban_dictionary_reader.git"
+  },
+  "keywords": [
+    "Login",
+    "CLI",
+    "NodeJS"
+  ],
   "author": "Zachary D. Skelton (zskelton@skeltonnetworks.com)",
   "license": "MIT",
-  "private": null
+  "bugs": {
+    "url": "https://github.com/zskelton/urban_dictionary_reader/issues"
+  },
+  "homepage": "https://github.com/zskelton/urban_dictionary_reader#readme",
+  "devDependencies": {
+    "jest": "^29.1.2"
+  },
+  "dependencies": {
+    "axios": "^1.1.2"
+  }
 }
