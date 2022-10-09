@@ -1,6 +1,16 @@
-const axious = require("axios");
+const axios = require("axios");
+const colors = require("colors");
 
-const enforceMax = (response) => {
+async function testSite() {
+  try {
+    return await axios.get("https://www.urbandictionary.com/");
+  } catch (error) {
+    console.log("Network Error.".red.bold);
+    return false;
+  }
+}
+
+function enforceMax(response) {
   let current = 0;
   const max = 100;
 
@@ -13,20 +23,27 @@ const enforceMax = (response) => {
   }
 
   return current;
-};
+}
 
 async function getDefinition() {
   try {
-    const response = await axious.get("https://api.urbandictionary.com/v0/random");
+    const response = await axios.get("https://api.urbandictionary.com/v0/random");
     const num = enforceMax(response);
 
     const word = response.data.list[num].word;
     const definition = response.data.list[num].definition;
     const site = response.data.list[num].permalink;
-    console.log(`${word}: ${definition}\n${site}`);
+    console.log(`${word.inverse.green}: ${definition.bold.green}\n${site.bold.blue}`);
   } catch (error) {
-    console.error(error);
+    console.error(colors.red(error));
   }
 }
 
-getDefinition();
+async function main() {
+  const _site = await testSite();
+  if (_site) {
+    getDefinition();
+  }
+}
+
+main();
