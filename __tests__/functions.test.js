@@ -2,9 +2,10 @@
 const axios = require("axios");
 const colors = require("colors");
 const  {getDefinition, enforceMax, testSite} = require("../app/functions.cjs");
-const datagood = require("./data_good.json");
-const databad = require("./data_bad.json");
-const {axios_response_good, axios_response_bad} = require("./axios_responses.js");
+const datagood = require("./testing_data/data_good.json");
+const databad = require("./testing_data/data_bad.json");
+const axios_response_good = require("./testing_data/axios_response_good.json");
+const axios_response_bad = require("./testing_data/axios_response_bad.json");
 
 // Test Site Function
 jest.mock("axios");
