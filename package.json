@@ -5,7 +5,8 @@
   "main": "app/index.cjs",
   "scripts": {
     "start": "node app/index.cjs",
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -23,9 +24,12 @@
   },
   "homepage": "https://github.com/zskelton/urban_dictionary_reader#readme",
   "devDependencies": {
+    "eslint": "^8.24.0",
     "jest": "^29.1.2"
   },
   "dependencies": {
-    "axios": "^1.1.2"
+    "axios": "^1.1.2",
+    "chalk": "^5.1.0",
+    "colors": "^1.4.0"
   }
 }
