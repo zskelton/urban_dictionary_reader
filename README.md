@@ -1,6 +1,6 @@
 # Urban Dictionary reader
 
-![Node.js CI](https://github.com/zskelton/urban_dictionary_reader/actions/workflows/node.js.yml/badge.svg)](https://github.com/zskelton/urban_dictionary_reader/actions/workflows/node.js.yml)
+![Node.js CI](https://github.com/zskelton/urban_dictionary_reader/actions/workflows/node.js.yml/badge.svg)]
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)]
 
 ## Description
