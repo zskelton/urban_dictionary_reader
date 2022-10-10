@@ -23,8 +23,15 @@ describe("Test TestSite():", () => {
 });
 
 // Get Definition Function
-describe("Test GetDefinition()", () => {
-  test("Test GetDefinition", async () => {
+describe("Test GetDefinition():", () => {
+  test("Normal Operation of GetDefinition.", async () => {
+    axios.get.mockResolvedValueOnce(datagood);
+    const definition = await getDefinition();
+    expect(definition).toBe();
+  });
+
+  test("Error Operation of GetDefinition.", async () => {
+    axios.get.mockResolvedValueOnce({});
     const definition = await getDefinition();
     expect(definition).toBe();
   });

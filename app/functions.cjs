@@ -2,11 +2,14 @@ const axios = require("axios");
 const colors = require("colors");
 
 async function testSite() {
-  const response = await axios.get("https://www.urbandictionary.com/").catch(() => {
+  const response = await axios.get("https://www.urbandictionary.com/");
+
+  if (response.status !== 200) {
     console.log("Network Error.".red.bold);
     return false;
-  });
-  return response;
+  }
+
+  return true;
 }
 
 function enforceMax(response, max = 100) {
@@ -26,7 +29,7 @@ function enforceMax(response, max = 100) {
 async function getDefinition() {
   try {
     const response = await axios.get("https://api.urbandictionary.com/v0/random");
-    const num = enforceMax(response);
+    const num = await enforceMax(response);
 
     const word = response.data.list[num].word;
     const definition = response.data.list[num].definition;
