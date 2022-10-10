@@ -1,7 +1,7 @@
 # Urban Dictionary reader
 
-![Node.js CI](https://github.com/zskelton/urban_dictionary_reader/actions/workflows/node.js.yml/badge.svg)]
-![License](https://img.shields.io/badge/license-MIT-blue.svg)]
+![Node.js CI](https://github.com/zskelton/urban_dictionary_reader/actions/workflows/node.js.yml/badge.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
 A small program to randomly display a message from the Urban Dictionary.
