@@ -8,7 +8,7 @@
     "start": "node app/index.cjs",
     "test": "jest",
     "coverage": "jest --coverage",
-    "build": "pkg . --out-path dist"
+    "build": "pkg . --out-path dist --target=latest-win-x64"
   },
   "repository": {
     "type": "git",
