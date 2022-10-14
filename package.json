@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Pulls a defiinition from Urban Dictionary on each login.",
   "main": "app/index.cjs",
+  "bin": "./bin/setup-bin.js",
   "scripts": {
     "start": "node app/index.cjs",
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "build": "pkg . --out-path dist"
   },
   "repository": {
     "type": "git",
